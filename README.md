@@ -31,12 +31,14 @@ blog-app/
 ## 🧑‍💻 How to Run the Project
 
 1. **Clone the repository**
+   
    ```
  git clone https://github.com/Tushar-Shinde-1/Blog-Application.git
 cd Blog-Application
 ```
 
 Install dependencies
+
 ```
 npm install
 ```
