@@ -32,7 +32,7 @@ blog-app/
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/yourusername/blog-app.git
+   git clone [https://github.com/yourusername/blog-app.git](https://github.com/Tushar-Shinde-1/Blog-Application/tree/main)
    
    cd blog-app
 Install dependencies
