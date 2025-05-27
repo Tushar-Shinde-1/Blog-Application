@@ -45,9 +45,9 @@ npm install
 3. **Run the app**
 
 ```
-node app.js
+node index.js
 ```
-4.**Open in browser**
+4. **Open in browser**
 
 ```
 http://localhost:3001
