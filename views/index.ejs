@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    
+    
+    <form action="/submitt" method="POST"> 
+        <label class="enter" for="title">Enter title</label>
+        <input type="text" class="inputtype1"   name="title" id ="title" required>
+        <label class="enter" for="blog">Enter Blog</label>
+         <textarea class="inputtype" name="blog" id="blog" required></textarea>
+        <button class="sendbutton" type="submit">Add Blog</button>
+       
+
+    </form>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Submit a Blog</h1>
+    <form action="/submitt" method="POST">
+        <label for="blog">Enter Blog</label>
+        <input type="text" name="blog" id="blog" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> -->

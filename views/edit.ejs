@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blogs</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="editsection">
+    <form action="/update" method="POST">
+        <input type="hidden" name="id" value="<%= post.id %>"> <!-- Hidden field to retain the id -->
+        <label class="enter" for="title">Edit Title:</label>
+        <input type="text" class="inputtype1" id="title" name="title" value="<%= post.title %>" required>
+        <br>
+        <label class="enter" for="content">Edit Content:</label>
+        <textarea class="inputtype" id="content" name="content" required><%= post.content %></textarea>
+        <br>
+        <button class="sendbutton" type="submit">Update</button>
+    </form>
+</div>
+
+    <!-- <%=post.title %>
+    welcome to edit -->
+</body>
+</html>

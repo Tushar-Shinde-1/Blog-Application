@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Blogs</title>
+</head>
+<body>
+
+    <%- include("partials/header.ejs") %>
+    <div class="container">
+    <h2>Your Blogs</h2>
+    <% if ( posts.length > 0) { %>
+        <% for( let i=0;i<posts.length;i++) { %>
+            <div class="blog-entry">
+                <h3 class="blog-title" onclick="toggle(<%= i %>)">Blog <%= i + 1 %>: <%= posts[i].title %></h3>
+
+                <p id="content-<%=i%>" class="blog-content"><%= posts[i].content %></p>
+                <div class="buttons">
+                <form action="/delete" method="POST" ><input type="hidden" name="id" value="<%=posts[i].id%>">
+                  <button class="deletebutton" type="submit">Delete</button>  
+                </form>
+
+                <form action="/edit" method="get">
+                <input type="hidden" name="id" value="<%=posts[i].id%>">
+                  <button class="editbutton" type="submit">Edit</button>  
+                </form>
+            </div>
+            </div>
+        <% }; %>
+    <% } else { %>
+        <p class="no-blogs-message">No blogs available. Start by adding one!</p>
+    <% } %>
+</div>
+<script src="/scripts.js"></script>
+</body>
+</html>
