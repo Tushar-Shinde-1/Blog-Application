@@ -12,14 +12,14 @@ A simple blog application built using **Node.js**, **Express**, **EJS**, and **U
 - Clean and minimal UI using **EJS** templating.
 
 ## 📁 Project Structure
-
+```
 blog-app/
 ├── public/ # Static files (CSS/JS)
 ├── views/ # EJS templates
 ├── index.js # Main server file
 ├── package.json
 └── README.md
-
+```
 ## 🛠️ Technologies Used
 
 - Node.js
@@ -31,8 +31,9 @@ blog-app/
 ## 🧑‍💻 How to Run the Project
 
 1. **Clone the repository**
-   ```bash
+   ```
    git clone https://github.com/yourusername/blog-app.git
+   
    cd blog-app
 Install dependencies
 
@@ -46,8 +47,7 @@ Copy code
 node app.js
 Open in browser
 
-arduino
-Copy code
+
 http://localhost:3001
 3. Run these commands to push to GitHub:
 ```bash
