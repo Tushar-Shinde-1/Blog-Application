@@ -36,24 +36,16 @@ blog-app/
    
    cd blog-app
 Install dependencies
-
-bash
-Copy code
+```
 npm install
+```
 Run the app
 
-bash
-Copy code
+```
 node app.js
+```
 Open in browser
 
-
+```
 http://localhost:3001
-3. Run these commands to push to GitHub:
-```bash
-git init
-git add .
-git commit -m "Initial commit - Blog Application"
-git branch -M main
-git remote add origin https://github.com/yourusername/blog-app.git
-git push -u origin main
+```
