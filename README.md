@@ -32,22 +32,22 @@ blog-app/
 
 1. **Clone the repository**
    
-   ```
+```
  git clone https://github.com/Tushar-Shinde-1/Blog-Application.git
 cd Blog-Application
 ```
 
-Install dependencies
+2. **Install dependencies**
 
 ```
 npm install
 ```
-Run the app
+3. **Run the app**
 
 ```
 node app.js
 ```
-Open in browser
+4.**Open in browser**
 
 ```
 http://localhost:3001
